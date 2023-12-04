@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Nabla&display=swap');
+@import url(/imgs/3d_unicode.ttf);
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Nabla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mooli&display=swap');
+@font-face {
+    font-family: qart;
+    src: url(/imgs/3d_unicode.ttf);
+}
+::selection {
+    background: rgba(95, 95, 95, 0.5);
+  }
+*{
+    font-family: qart;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #24252A;
+    text-align: center;
+    
+  
+}
+li, a {
+    font-size: 20px;
+    color: #edf0f1;
+    text-decoration: none;
+    
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    border-bottom: 2px;
+    border-color: rgba(95, 95, 95, 0.5);
+    
+}
+
+.logo a{
+    cursor: pointer;
+    font-family: 'Nabla', cursive;
+    margin: 0;
+    font-size: 30px;
+    transition: 0.25s ease-out ;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #202125;
+    
+}
+.logo a:hover {
+    box-shadow: 0 0 15px 5px #0087ca;
+    background-color: #0087ca;
+    border-radius: 10px;
+    
+}
+.nav_links{
+    list-style: none;
+    margin-left: 20px;
+}
+.nav_links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+.nav_links li a {
+    transition: all 0.3s ease 0s;
+    display: inline-block;
+    position: relative;
+    background-color: #202125;
+    border-radius: 10px;
+    padding: 6px 10px 6px 10px;
+    margin-bottom: 2px;
+}
+.nav_links li a:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -1.5px;
+    left: 0;
+    background-color: #0087ca;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+  
+.nav_links li a:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+.testdiv {
+    position: relative;
+    display: flex; /* Use flex display to place divs side by side */
+    flex-wrap: wrap; /* Wrap divs to the next row if the screen is too small */
+    gap: 10px; /* Add some spacing between divs */
+    margin: 10px;
+    background-color: rgba(236, 230, 61, 0.8);
+    font-family: 'Nabla', cursive;
+    width: 10.5cm;
+    height: 350px;
+    width: 300px;
+    border-radius: 5px;
+    padding: 10px 10px 10px 10px;
+    box-shadow: 0px 8px 20px 2px;
+    transition: 0.25s ease-out ;
+    
+}
+.testdiv h2 {
+    background-color: rgba(0, 135, 202, 0);
+    font-family: qart, 'Mooli', sans-serif;;
+    font-size: 25px;
+}
+.testdiv:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    position: relative;
+    box-shadow: 0 0 15px 4px rgba(236, 230, 61, 0.5);
+
+}
+#content-container {
+    display: grid;
+    grid-template-columns: repeat(3, 200px); /* Create columns, adjust as needed */
+    gap: 5px; /* Add spacing between grid items */
+    padding: 20px; /* Add padding to the container */
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    
+
+}
+.testdiv {
+    padding: 20px;
+    overflow: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+.maindiv {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    display: flex; /* Use flex display to place divs side by side */
+    flex-wrap: wrap; /* Wrap divs to the next row if the screen is too small */
+    gap: 10px; /* Add some spacing between divs */
+    margin-bottom: 10px;
+    background-color: rgba(236, 61, 61, 0.8);
+    width: 100%;
+    border-radius: 11px;
+    margin-left:0;
+    padding: 10px 10px 10px 10px;
+    box-shadow: 0px 8px 20px 2px;
+}
+.maindiv h2 {
+    background-color: rgba(0, 135, 202, 0);
+    font-family: qart;
+    font-size: 25px;
+}
+.maindiv {
+    padding: 20px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+.commingsoon {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    display: flex; /* Use flex display to place divs side by side */
+    flex-wrap: wrap; /* Wrap divs to the next row if the screen is too small */
+    gap: 10px; /* Add some spacing between divs */
+    margin-bottom: 10px;
+    background-color: rgba(236, 61, 61, 0.8);
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px 10px 10px 10px;
+    box-shadow: 0px 8px 20px 2px;
+}
+.commingsoon h2 {
+    background-color: rgba(0, 135, 202, 0);
+    font-family: qart;
+    font-size: 25px;
+    text-align: center;
+}
+.commingsoon {
+    padding: 20px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+.commingsoon img{
+    margin-top: 10px;
+    border-radius: 10px;
+}
+.welcome{
+    margin-top: 10px;
+    left: 50%;
+    transform: translate(-50%,0);
+    border-radius: 10px;
+    box-shadow: 0 0 20px 5px rgba(95, 95, 95, 0.4);
+
+}
+.welcome:hover {
+    cursor: pointer;
+
+}
+.country {
+        position: relative;
+        display: flex; /* Use flex display to place divs side by side */
+        flex-wrap: wrap; /* Wrap divs to the next row if the screen is too small */
+        gap: 10px; /* Add some spacing between divs */
+        margin-bottom: 10px;
+        margin-left: 10px;
+        background-color: rgba(236, 61, 61);
+        width: 50%;
+        border-radius: 5px;
+        padding: 10px 10px 10px 10px;
+        justify-content: center;
+        left: 50%;
+        transform: translate(-50%,0);
+}
+.country a {
+    text-decoration: none;
+    background-color: rgba(236, 61, 61);
+    color: black;
+    font-family: qart;
+    font-size: 25px;
+    text-align: center;
+}
+.country:hover {
+    cursor: pointer;
+}
+.cbox {
+    background-color: rgba(236, 61, 61, 0.8);
+}
+
+
+
+
