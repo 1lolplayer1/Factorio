@@ -46,4 +46,3 @@
         for (let i = 1; i <= 3; i++) { // Loop 5 times to create 5 divs
             createRandomDiv(i); // Pass the index to the function
         }
-        
