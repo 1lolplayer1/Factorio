@@ -1,15 +1,15 @@
  // Array of random texts
  const randomTexts = [
-    "Giorgi abuladze nikas dgeshi 20 jer axrchobs",
-    "Octopuses have three hearts. Two pump blood to the gills, while the third pumps it to the rest of the body.",
-    "The Eiffel Tower can be 15 cm taller during the summer due to the expansion of the iron structure in the heat.",
-    "Cows have best friends and can become stressed when they are separated from them.",
-    "The shortest war in history was between Britain and Zanzibar on August 27, 1896. Zanzibar surrendered after 38 minutes.",
-    "Bananas are berries, but strawberries are not.",
-    "The world's largest desert is not the Sahara, but Antarctica.",
-    "The first computer programmer was a woman named Ada Lovelace, who wrote the first algorithm intended to be processed by a machine in the mid-1800s.",
-    "There are more possible iterations of a game of chess than there are atoms in the known universe.",
-    "The world's oldest known customer complaint dates back to ancient Babylon, around 1750 BC, in which a customer claimed he was sold inferior-quality copper ingots."
+    "იაპონიაში ზრდილობიანად მიჩნეულია საკვების ხმამაღლა ჭამა. ეს იმაზე მეტყველებს, რომ ჭამით ტკბებით.",
+    "ინდოეთში ნამასტეს მისალმება პატივისცემის ნიშანია.",
+    "აღმოსავლეთ აფრიკის მასაის ხალხი, ტრადიციულად ხელზე იფურთხებენ და ისე ართმევენ ერთმანეთს ხელს.",
+    "რუსეთში ჩვეულებრივია კენტი, რაოდენობის ყვავილების მიტანა დღესასწაულებზე, მაგრამ ლუწი რიცხვები მიაქვთ დაკრძალვაზე.",
+    "ტრადიციულ მისალმებას ახალ ზელანდიაში მაორებს შორის ჰონგი ეწოდება, სადაც ორი ადამიანი ცხვირსა და შუბლს ერთმანეთს აჭერს.",
+    "მაროკოში ჩვეულებისამებრ პიტნის ჩაის სიმაღლიდან ასხამენ, ქაფის შესაქმნელად და გემოს გასაუმჯობესებლად",
+    "შვედეთში ასეთი წესია, როდესაც სახლში შედიხარ ფეხსაცმელი უნდა გაიხადო, ეს პატივისცემისა და სისუფთავის ნიშანია.",
+    "ჩინეთში რიცხვი 8 იღბლიანად ითვლება, ხოლო 4 უიღბლოდ.",
+    "ეთიოპიის ყავის ცერემონია მნიშვნელოვანი კულტურული ტრადიციაა, რომელიც მოიცავს მწვანე ყავის მარცვლის შეწვას, მათ დაფქვას და ყავის სპეციალურ ქვაბში მოხარშვას",
+    "ტიბეტში ტრადიციულ მისალმებად ითვლება ენის გამოყოფა, რაც ნიშნავს, რომ საფრთხე არ ხარ."
 ];
 // Function to get and remove a random text
         function getRandomText() {

@@ -9,6 +9,17 @@
 ::selection {
     background: rgba(95, 95, 95, 0.5);
   }
+  ::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-thumb {
+    background: #555;
+    border-radius: 20px;
+    transition: 0.25s ease;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #757474;
+}
 *{
     font-family: qart;
     box-sizing: border-box;
@@ -129,7 +140,8 @@ header{
 }
 .testdiv {
     padding: 20px;
-    overflow: auto;
+    overflow-x: hidden;
+    overflow-y: auto;
     display: flex;
     justify-content: space-evenly;
 }
@@ -159,36 +171,6 @@ header{
     display: flex;
     justify-content: center;
 }
-.commingsoon {
-    position: relative;
-    left: 50%;
-    transform: translate(-50%, 0);
-    display: flex; /* Use flex display to place divs side by side */
-    flex-wrap: wrap; /* Wrap divs to the next row if the screen is too small */
-    gap: 10px; /* Add some spacing between divs */
-    margin-bottom: 10px;
-    background-color: rgba(236, 61, 61, 0.8);
-    width: 100%;
-    border-radius: 5px;
-    padding: 10px 10px 10px 10px;
-    box-shadow: 0px 8px 20px 2px;
-}
-.commingsoon h2 {
-    background-color: rgba(0, 135, 202, 0);
-    font-family: qart;
-    font-size: 25px;
-    text-align: center;
-}
-.commingsoon {
-    padding: 20px;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-}
-.commingsoon img{
-    margin-top: 10px;
-    border-radius: 10px;
-}
 .welcome{
     margin-top: 10px;
     left: 50%;
@@ -212,9 +194,9 @@ header{
     text-decoration: none;
     background-color: inherit;
     padding: 5px 10px;
-    color: red;
+    color: limegreen;
     font-family: qart;
-    font-size: 25px;
+    font-size: 20px;
     text-align: center;
     transition: 0.25s ease-in-out;
     font-size: 40px;
@@ -237,12 +219,6 @@ header{
     border-radius: 20px;
     transition: 0.25s ease-in-out;
 }
-.cbox:hover {
-    box-shadow: 0 0 15px 5px #0087ca;
-    background-color: #0087ca;
-    border-radius: 10px;
-    
-}
 .country a:hover {
     box-shadow: 0 0 15px 5px rgba(236, 230, 61, 1);
     background-color: rgba(236, 230, 61, 1);
@@ -254,10 +230,11 @@ header{
     max-width: 400px;
     display: flex;
     justify-content: center;
-    margin-top: 10px;
+    margin-top: 18px;
     background-color: inherit;
     color: white;
     transition: 0.25s ease-in-out;
+    font-size: 18px;
     border-radius: 20px;
     padding: 10px;
 }
@@ -266,4 +243,102 @@ header{
     background-color: rgba(236, 230, 61, 1);
     border-radius: 10px;
     color: black;
+}
+
+.ritual {
+    width: 50%;
+    transform: translate(50%);
+    background-color: #0087ca;
+    border-radius: 30px;
+    margin-top: 50px;
+    overflow: hidden;
+    box-shadow: 0 0px 15px 0px #0087ca;
+    transition: 0.25s ease-in-out;
+    
+}
+.ritual h1, p {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    background-color: inherit;
+    padding: 20px;
+
+}
+.ritual h1 {
+    font-size: 30px;
+}
+.ritual p {
+    font-size: 25px;
+}
+
+.music {
+    animation: padder 2s ease infinite;
+    animation-delay: 0s;
+    color: inherit;
+    position: absolute;
+    top: 90%;
+    font-size: 35px;
+}
+.sec {
+    left: 90%;
+}
+.tre {
+    left: 85%;
+    top: 75%;
+}
+.for {
+    left: 20%;
+    top: 75%;
+}
+.fiv {
+    left: 10%;
+    top: 55%;
+}
+.six {
+    left: 80%;
+    top: 55%;
+}
+.sev {
+    left: 50%;
+    top: 75%;
+}
+
+@keyframes padder{
+    0% {
+        margin: 0;
+        color: rgba(255, 255, 255, 0);
+    }
+    10% {
+        margin: 5px;
+        color: rgba(255, 255, 255, 0.5);
+    }
+    25% {
+        margin: 10px;
+        color: rgba(255, 255, 255, 0.75);
+    }
+    40% {
+        margin: 15px;
+        color: rgba(255, 255, 255, 0.5);
+    }
+    50% {
+        margin: 20px;
+        color: rgba(255, 255, 255, 0.25);
+    }
+    60% {
+        margin: 25px;
+        color: rgba(255, 255, 255, 0.5);
+    }
+    75% {
+        margin: 30px;
+        color: rgba(255, 255, 255, 0.75);
+    }
+    90% {
+        margin: 35px;
+        color: rgba(255, 255, 255, 0.5);
+    }
+    100% {
+        margin: 40px;
+        color: rgba(255, 255, 255, 0);
+
+    }
 }
