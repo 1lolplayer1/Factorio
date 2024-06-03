@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Nabla&display=swap');
-@import url(/imgs/3d_unicode.ttf);
+@import url(./imgs/3d_unicode.ttf);
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Nabla&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mooli&display=swap');
 @font-face {
     font-family: qart;
-    src: url(/imgs/3d_unicode.ttf);
+    src: url(./imgs/3d_unicode.ttf);
 }
 ::selection {
     background: rgba(95, 95, 95, 0.5);
@@ -192,6 +192,7 @@ header{
 }
 .country a {
     text-decoration: none;
+    border: 2px;
     background-color: inherit;
     padding: 5px 10px;
     color: limegreen;
@@ -222,6 +223,7 @@ header{
 .cbox:hover {
     cursor: default;
 }
+
 .country a:hover {
     box-shadow: 0 0 15px 5px rgba(236, 230, 61, 1);
     background-color: rgba(236, 230, 61, 1);
