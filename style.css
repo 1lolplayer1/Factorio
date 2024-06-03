@@ -89,7 +89,7 @@ header{
     height: 2px;
     bottom: -1.5px;
     left: 0;
-    background-color: #0087ca;
+    background-color: rgb(236, 61, 61);
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
 }
@@ -227,14 +227,14 @@ header{
 
 }
 .country p {
-    max-width: 400px;
+    max-width: 500px;
     display: flex;
     justify-content: center;
     margin-top: 18px;
     background-color: inherit;
     color: white;
     transition: 0.25s ease-in-out;
-    font-size: 18px;
+    font-size: 20px;
     border-radius: 20px;
     padding: 10px;
 }
@@ -248,13 +248,18 @@ header{
 .ritual {
     width: 50%;
     transform: translate(50%);
-    background-color: #0087ca;
+    background-color: rgba(236, 61, 61, 0.8);
     border-radius: 30px;
-    margin-top: 50px;
+    margin-bottom: 10px;
+    margin-top: 45px;
     overflow: hidden;
-    box-shadow: 0 0px 15px 0px #0087ca;
+    box-shadow: 0 0px 15px 0px;
     transition: 0.25s ease-in-out;
     
+}
+.ritual:hover {
+    box-shadow: 0 0 15px 0px rgb(236, 61, 61);
+    cursor: pointer;
 }
 .ritual h1, p {
     display: flex;
@@ -270,38 +275,82 @@ header{
 .ritual p {
     font-size: 25px;
 }
+.ritual a {
+    color: inherit;
+}
 
 .music {
-    animation: padder 2s ease infinite;
+    animation: padder 3s ease infinite;
     animation-delay: 0s;
     color: inherit;
     position: absolute;
     top: 90%;
-    font-size: 35px;
+    font-size: 40px;
+    overflow: hidden;
+}
+.one {
+    background-color: transparent;
+    top: 80%;
 }
 .sec {
+    background-color: transparent;
     left: 90%;
+    top: 80%;
 }
 .tre {
+    background-color: transparent;
     left: 85%;
     top: 75%;
 }
 .for {
-    left: 20%;
-    top: 75%;
+    background-color: transparent;
+    left: 18%;
+    top: 60%;
 }
 .fiv {
+    background-color: transparent;
     left: 10%;
     top: 55%;
 }
 .six {
+    background-color: transparent;
     left: 80%;
     top: 55%;
 }
 .sev {
+    background-color: transparent;
     left: 50%;
     top: 75%;
 }
+
+.h {
+    color: white;
+    font-weight: lighter;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @keyframes padder{
     0% {
@@ -339,6 +388,7 @@ header{
     100% {
         margin: 40px;
         color: rgba(255, 255, 255, 0);
+        overflow: hidden;
 
     }
 }
