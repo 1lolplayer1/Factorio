@@ -223,14 +223,6 @@ header{
 .cbox:hover {
     cursor: default;
 }
-
-.country a:hover {
-    box-shadow: 0 0 15px 5px rgba(236, 230, 61, 1);
-    background-color: rgba(236, 230, 61, 1);
-    border-radius: 10px;
-    color: black;
-
-}
 .country p {
     max-width: 500px;
     display: flex;
@@ -242,12 +234,7 @@ header{
     font-size: 20px;
     border-radius: 20px;
     padding: 10px;
-}
-.country p:hover {
-    box-shadow: 0 0 15px 5px rgba(236, 230, 61, 1);
-    background-color: rgba(236, 230, 61, 1);
-    border-radius: 10px;
-    color: black;
+    border: 2px solid white;
 }
 
 .ritual {
