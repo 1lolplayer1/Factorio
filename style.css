@@ -219,6 +219,9 @@ header{
     border-radius: 20px;
     transition: 0.25s ease-in-out;
 }
+.cbox:hover {
+    cursor: default;
+}
 .country a:hover {
     box-shadow: 0 0 15px 5px rgba(236, 230, 61, 1);
     background-color: rgba(236, 230, 61, 1);
